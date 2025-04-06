@@ -3,6 +3,8 @@ const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
 const apiroutes=require('./routes/apiroutes')
+require('dotenv').config();
+
 
 const app = express();
 const PORT = 3001;

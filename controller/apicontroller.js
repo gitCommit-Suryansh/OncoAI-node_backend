@@ -2,8 +2,8 @@
 const fs = require('fs');
 const path = require('path');
 
-
 exports.predict = async (req, res) => {
+  console.log(process.env.FLASK_BACKEND_URL)
   const axios = require('axios');
   const FormData = require('form-data');
   const fs = require('fs');
@@ -21,4 +21,3 @@ exports.predict = async (req, res) => {
 exports.check=async(req,res)=>{
     return res.json("working")
 }
-    
